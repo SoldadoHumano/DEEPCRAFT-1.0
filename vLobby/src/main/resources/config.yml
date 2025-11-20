@@ -1,0 +1,459 @@
+# Project: DeepCraft
+# File: config.yml
+# Author: Vitor
+# Date: 11/20/2025
+
+# License:
+#   This file is part of the DeepCraft project, licensed under
+#   the GNU General Public License v3.0 (GPLv3).
+
+#   You may redistribute and/or modify this file under the terms of the GPLv3.
+#   This file is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#   See the LICENSE file in the DeepCraft GitHub repository for more details:
+#   https://github.com/SoldadoHumano/DEEPCRAFT-1.0/blob/main/LICENSE
+
+
+lobby:
+  spawn:
+    world: world
+    x: 23.5
+    y: 101.5
+    z: -57.5
+    yaw: -90
+    pitch: 0
+  teleport_bow:
+    enabled: true
+    material: BOW
+    display_name: "&bAʀᴄᴏ Dɪᴠɪɴᴏ"
+    lore:
+    glow: true
+    infinity: true
+    hide_enchants: true
+    arrows: 1
+    arrow_type: "ARROW"
+    bow_slot: 6
+    arrow_slot: 9
+    auto_refill: false
+    refill_interval: 25
+    tp_message: "&aTeleportado!"
+    show_tp_message: false
+    # Novas configurações de som
+    tp_sound: "entity.enderman.teleport"
+    tp_sound_volume: 1.0
+    tp_sound_pitch: 1.0
+
+  compass:
+    item: COMPASS
+    display_name: "&6Mᴇɴᴜ ᴅᴇ Sᴇʀᴠɪᴅᴏʀᴇꜱ"
+    slots:
+      hub: 31
+      survival: 10
+    items:
+      hub:
+        material: BEACON
+        display_name: "           &bLᴏʙʙʏ"
+        lore:
+          - " "
+          - "&7Clique para se conectar"
+          - "&7no &bServidor Lobby"
+          - " "
+          - "   &cVocê já está aqui!"
+        glow: true
+        command: ""
+        click_sound: "entity.villager.no"
+        sound_volume: 1.0
+        sound_pitch: 1.1
+        keep-open: true
+      survival:
+        material: DIAMOND_SWORD
+        display_name: "    &aSᴜʀᴠɪᴠᴀʟ | &21.21.10"
+        lore:
+          - " "
+          - "&a⤷ &2Mineração"
+          - "&a⤷ &dConstrução"
+          - "&a⤷ &bExploração"
+          - "&a⤷ &6Ranks"
+          - "&a⤷ &9Economia Balanceada"
+          - "&a⤷ &7Eventos"
+          - "&a⤷ &fFarm"
+          - "&a⤷ &cPvP"
+          - "&a⤷ &eE muito mais!"
+          - " "
+          - "&7Clique para conectar no"
+          - "&aServidor Survival"
+        glow: true
+        command: "server survival"
+        click_sound: "entity.experience_orb.pickup"
+        sound_volume: 1.0
+        sound_pitch: 1.2
+        keep-open: false
+
+  staff:
+    creative_message: "&c[DᴇᴇᴘCʀᴀꜰᴛ] &aVocê entrou em modo criativo por ser staff."
+
+compass-menu:
+  size: 36
+  title: "&0&lMᴇɴᴜ ᴅᴇ Sᴇʀᴠɪᴅᴏʀᴇꜱ"
+  sounds:
+    open: "entity.villager.work_librarian"
+    click: "entity.experience_orb.pickup"
+
+messages:
+  join:
+    ceo: "&6CEO &b%player_name% &ajuntou-se a este lobby."
+    owner: "&c&lOwner &b%player_name% &ajuntou-se a este lobby."
+    default:
+
+  titles:
+    ceo:
+      title: "&c&lBᴇᴍ Vɪɴᴅᴏ(a)"
+      subtitle: "&d&lTenha um bom jogo!"
+      fadeIn: 10
+      stay: 130
+      fadeOut: 10
+    owner:
+      title: "&c&lBᴇᴍ Vɪɴᴅᴏ(a)"
+      subtitle: "&d&lTenha um bom jogo!"
+      fadeIn: 10
+      stay: 100
+      fadeOut: 10
+    default:
+      title: "&c&lBᴇᴍ Vɪɴᴅᴏ(a)"
+      subtitle: "&d&lTenha um bom jogo!"
+      fadeIn: 10
+      stay: 130
+      fadeOut: 10
+
+sounds:
+  join:
+    ceo: "ui.toast.challenge_complete"
+    owner: "entity.wither.death"
+    default:
+
+  volume: 1.0
+  pitch: 1.0
+  special_pitch:
+    ceo: 0.9
+    owner: 0.9
+
+portals:
+  survival:
+    mob: BREEZE
+    scale: 1.0
+    names:
+      - "&x&0&E&F&5&0&0&lS&x&0&E&F&F&0&0&lᴜ&x&0&E&F&5&0&0&lʀ&x&0&F&E&A&0&0&lᴠ&x&0&F&E&0&0&0&lɪ&x&0&F&D&6&0&0&lᴠ&x&0&F&C&B&0&0&lᴀ&x&1&0&C&1&0&0&lʟ"
+      - "&x&0&F&E&A&0&0&lS&x&0&E&F&5&0&0&lᴜ&x&0&E&F&F&0&0&lʀ&x&0&E&F&5&0&0&lᴠ&x&0&F&E&A&0&0&lɪ&x&0&F&E&0&0&0&lᴠ&x&0&F&D&6&0&0&lᴀ&x&0&F&C&B&0&0&lʟ"
+      - "&x&0&F&E&0&0&0&lS&x&0&F&E&A&0&0&lᴜ&x&0&E&F&5&0&0&lʀ&x&0&E&F&F&0&0&lᴠ&x&0&E&F&5&0&0&lɪ&x&0&F&E&A&0&0&lᴠ&x&0&F&E&0&0&0&lᴀ&x&0&F&D&6&0&0&lʟ"
+      - "&x&0&F&D&6&0&0&lS&x&0&F&E&0&0&0&lᴜ&x&0&F&E&A&0&0&lʀ&x&0&E&F&5&0&0&lᴠ&x&0&E&F&F&0&0&lɪ&x&0&E&F&5&0&0&lᴠ&x&0&F&E&A&0&0&lᴀ&x&0&F&E&0&0&0&lʟ"
+      - "&x&0&F&C&B&0&0&lS&x&0&F&D&6&0&0&lᴜ&x&0&F&E&0&0&0&lʀ&x&0&F&E&A&0&0&lᴠ&x&0&E&F&5&0&0&lɪ&x&0&E&F&F&0&0&lᴠ&x&0&E&F&5&0&0&lᴀ&x&0&F&E&A&0&0&lʟ"
+      - "&x&1&0&C&1&0&0&lS&x&0&F&C&B&0&0&lᴜ&x&0&F&D&6&0&0&lʀ&x&0&F&E&0&0&0&lᴠ&x&0&F&E&A&0&0&lɪ&x&0&E&F&5&0&0&lᴠ&x&0&E&F&F&0&0&lᴀ&x&0&E&F&5&0&0&lʟ"
+      - "&x&1&0&B&7&0&0&lS&x&1&0&C&1&0&0&lᴜ&x&0&F&C&B&0&0&lʀ&x&0&F&D&6&0&0&lᴠ&x&0&F&E&0&0&0&lɪ&x&0&F&E&A&0&0&lᴠ&x&0&E&F&5&0&0&lᴀ&x&0&E&F&F&0&0&lʟ"
+      - "&x&1&0&A&C&0&0&lS&x&1&0&B&7&0&0&lᴜ&x&1&0&C&1&0&0&lʀ&x&0&F&C&B&0&0&lᴠ&x&0&F&D&6&0&0&lɪ&x&0&F&E&0&0&0&lᴠ&x&0&F&E&A&0&0&lᴀ&x&0&E&F&5&0&0&lʟ"
+      - "&x&1&0&A&2&0&0&lS&x&1&0&A&C&0&0&lᴜ&x&1&0&B&7&0&0&lʀ&x&1&0&C&1&0&0&lᴠ&x&0&F&C&B&0&0&lɪ&x&0&F&D&6&0&0&lᴠ&x&0&F&E&0&0&0&lᴀ&x&0&F&E&A&0&0&lʟ"
+      - "&x&1&1&9&8&0&0&lS&x&1&0&A&2&0&0&lᴜ&x&1&0&A&C&0&0&lʀ&x&1&0&B&7&0&0&lᴠ&x&1&0&C&1&0&0&lɪ&x&0&F&C&B&0&0&lᴠ&x&0&F&D&6&0&0&lᴀ&x&0&F&E&0&0&0&lʟ"
+      - "&x&1&1&8&D&0&0&lS&x&1&1&9&8&0&0&lᴜ&x&1&0&A&2&0&0&lʀ&x&1&0&A&C&0&0&lᴠ&x&1&0&B&7&0&0&lɪ&x&1&0&C&1&0&0&lᴠ&x&0&F&C&B&0&0&lᴀ&x&0&F&D&6&0&0&lʟ"
+      - "&x&1&1&8&3&0&0&lS&x&1&1&8&D&0&0&lᴜ&x&1&1&9&8&0&0&lʀ&x&1&0&A&2&0&0&lᴠ&x&1&0&A&C&0&0&lɪ&x&1&0&B&7&0&0&lᴠ&x&1&0&C&1&0&0&lᴀ&x&0&F&C&B&0&0&lʟ"
+      - "&x&1&1&7&9&0&0&lS&x&1&1&8&3&0&0&lᴜ&x&1&1&8&D&0&0&lʀ&x&1&1&9&8&0&0&lᴠ&x&1&0&A&2&0&0&lɪ&x&1&0&A&C&0&0&lᴠ&x&1&0&B&7&0&0&lᴀ&x&1&0&C&1&0&0&lʟ"
+      - "&x&1&2&6&E&0&0&lS&x&1&1&7&9&0&0&lᴜ&x&1&1&8&3&0&0&lʀ&x&1&1&8&D&0&0&lᴠ&x&1&1&9&8&0&0&lɪ&x&1&0&A&2&0&0&lᴠ&x&1&0&A&C&0&0&lᴀ&x&1&0&B&7&0&0&lʟ"
+      - "&x&1&2&6&4&0&0&lS&x&1&2&6&E&0&0&lᴜ&x&1&1&7&9&0&0&lʀ&x&1&1&8&3&0&0&lᴠ&x&1&1&8&D&0&0&lɪ&x&1&1&9&8&0&0&lᴠ&x&1&0&A&2&0&0&lᴀ&x&1&0&A&C&0&0&lʟ"
+      - "&x&1&2&6&E&0&0&lS&x&1&2&6&4&0&0&lᴜ&x&1&2&6&E&0&0&lʀ&x&1&1&7&9&0&0&lᴠ&x&1&1&8&3&0&0&lɪ&x&1&1&8&D&0&0&lᴠ&x&1&1&9&8&0&0&lᴀ&x&1&0&A&2&0&0&lʟ"
+      - "&x&1&1&7&9&0&0&lS&x&1&2&6&E&0&0&lᴜ&x&1&2&6&4&0&0&lʀ&x&1&2&6&E&0&0&lᴠ&x&1&1&7&9&0&0&lɪ&x&1&1&8&3&0&0&lᴠ&x&1&1&8&D&0&0&lᴀ&x&1&1&9&8&0&0&lʟ"
+      - "&x&1&1&8&3&0&0&lS&x&1&1&7&9&0&0&lᴜ&x&1&2&6&E&0&0&lʀ&x&1&2&6&4&0&0&lᴠ&x&1&2&6&E&0&0&lɪ&x&1&1&7&9&0&0&lᴠ&x&1&1&8&3&0&0&lᴀ&x&1&1&8&D&0&0&lʟ"
+      - "&x&1&1&8&D&0&0&lS&x&1&1&8&3&0&0&lᴜ&x&1&1&7&9&0&0&lʀ&x&1&2&6&E&0&0&lᴠ&x&1&2&6&4&0&0&lɪ&x&1&2&6&E&0&0&lᴠ&x&1&1&7&9&0&0&lᴀ&x&1&1&8&3&0&0&lʟ"
+      - "&x&1&1&9&8&0&0&lS&x&1&1&8&D&0&0&lᴜ&x&1&1&8&3&0&0&lʀ&x&1&1&7&9&0&0&lᴠ&x&1&2&6&E&0&0&lɪ&x&1&2&6&4&0&0&lᴠ&x&1&2&6&E&0&0&lᴀ&x&1&1&7&9&0&0&lʟ"
+      - "&x&1&0&A&2&0&0&lS&x&1&1&9&8&0&0&lᴜ&x&1&1&8&D&0&0&lʀ&x&1&1&8&3&0&0&lᴠ&x&1&1&7&9&0&0&lɪ&x&1&2&6&E&0&0&lᴠ&x&1&2&6&4&0&0&lᴀ&x&1&2&6&E&0&0&lʟ"
+      - "&x&1&0&A&C&0&0&lS&x&1&0&A&2&0&0&lᴜ&x&1&1&9&8&0&0&lʀ&x&1&1&8&D&0&0&lᴠ&x&1&1&8&3&0&0&lɪ&x&1&1&7&9&0&0&lᴠ&x&1&2&6&E&0&0&lᴀ&x&1&2&6&4&0&0&lʟ"
+      - "&x&1&0&B&7&0&0&lS&x&1&0&A&C&0&0&lᴜ&x&1&0&A&2&0&0&lʀ&x&1&1&9&8&0&0&lᴠ&x&1&1&8&D&0&0&lɪ&x&1&1&8&3&0&0&lᴠ&x&1&1&7&9&0&0&lᴀ&x&1&2&6&E&0&0&lʟ"
+      - "&x&1&0&C&1&0&0&lS&x&1&0&B&7&0&0&lᴜ&x&1&0&A&C&0&0&lʀ&x&1&0&A&2&0&0&lᴠ&x&1&1&9&8&0&0&lɪ&x&1&1&8&D&0&0&lᴠ&x&1&1&8&3&0&0&lᴀ&x&1&1&7&9&0&0&lʟ"
+      - "&x&0&F&C&B&0&0&lS&x&1&0&C&1&0&0&lᴜ&x&1&0&B&7&0&0&lʀ&x&1&0&A&C&0&0&lᴠ&x&1&0&A&2&0&0&lɪ&x&1&1&9&8&0&0&lᴠ&x&1&1&8&D&0&0&lᴀ&x&1&1&8&3&0&0&lʟ"
+      - "&x&0&F&D&6&0&0&lS&x&0&F&C&B&0&0&lᴜ&x&1&0&C&1&0&0&lʀ&x&1&0&B&7&0&0&lᴠ&x&1&0&A&C&0&0&lɪ&x&1&0&A&2&0&0&lᴠ&x&1&1&9&8&0&0&lᴀ&x&1&1&8&D&0&0&lʟ"
+      - "&x&0&F&E&0&0&0&lS&x&0&F&D&6&0&0&lᴜ&x&0&F&C&B&0&0&lʀ&x&1&0&C&1&0&0&lᴠ&x&1&0&B&7&0&0&lɪ&x&1&0&A&C&0&0&lᴠ&x&1&0&A&2&0&0&lᴀ&x&1&1&9&8&0&0&lʟ"
+      - "&x&0&F&E&A&0&0&lS&x&0&F&E&0&0&0&lᴜ&x&0&F&D&6&0&0&lʀ&x&0&F&C&B&0&0&lᴠ&x&1&0&C&1&0&0&lɪ&x&1&0&B&7&0&0&lᴠ&x&1&0&A&C&0&0&lᴀ&x&1&0&A&2&0&0&lʟ"
+      - "&x&0&E&F&5&0&0&lS&x&0&F&E&A&0&0&lᴜ&x&0&F&E&0&0&0&lʀ&x&0&F&D&6&0&0&lᴠ&x&0&F&C&B&0&0&lɪ&x&1&0&C&1&0&0&lᴠ&x&1&0&B&7&0&0&lᴀ&x&1&0&A&C&0&0&lʟ"
+      - "&x&0&E&F&F&0&0&lS&x&0&E&F&5&0&0&lᴜ&x&0&F&E&A&0&0&lʀ&x&0&F&E&0&0&0&lᴠ&x&0&F&D&6&0&0&lɪ&x&0&F&C&B&0&0&lᴠ&x&1&0&C&1&0&0&lᴀ&x&1&0&B&7&0&0&lʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§2§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+      - "§a§lSᴜʀᴠɪᴠᴀʟ"
+    animation-speed: 1
+    location: [33.5, 102.05, -67.5, 45.1, 0] # X, Y, Z, yaw, pitch
+    command: "server survival"  # comando a ser executado ao clicar
+    click-sound: "entity.player.levelup" # som que toca ao clicar
+    click-pitch: 1
+    music: # música que toca ao redor do portal
+      - "music_disc.strad"
+      - "music_disc.stal"
+    music-radius: 5 # raio em blocos para ouvir a música
+    music-pitches: [1, 1]
+    music-intervals: # em ticks (20 ticks = 1 segundo)
+      - 3780
+      - 3000
+  embreve1:
+    mob: evoker
+    scale: 1.0
+    names:
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&0&0&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&0&0&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&0&0&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&0&0&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&0&0&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&0&0&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&4&9&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&F&F&0&0&9&1&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&E&8&1&4&9&B&lᴍ &x&F&F&0&0&9&1&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&D&1&2&9&A&5&lᴍ &x&E&8&1&4&9&B&lB&x&F&F&0&0&9&1&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&B&9&3&D&A&F&lᴍ &x&D&1&2&9&A&5&lB&x&E&8&1&4&9&B&lʀ&x&F&F&0&0&9&1&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&A&2&5&1&B&9&lᴍ &x&B&9&3&D&A&F&lB&x&D&1&2&9&A&5&lʀ&x&E&8&1&4&9&B&lᴇ&x&F&F&0&0&9&1&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&8&B&6&6&C&3&lᴍ &x&A&2&5&1&B&9&lB&x&B&9&3&D&A&F&lʀ&x&D&1&2&9&A&5&lᴇ&x&E&8&1&4&9&B&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&7&4&7&A&C&D&lᴍ &x&8&B&6&6&C&3&lB&x&A&2&5&1&B&9&lʀ&x&B&9&3&D&A&F&lᴇ&x&D&1&2&9&A&5&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&5&D&8&F&D&7&lᴍ &x&7&4&7&A&C&D&lB&x&8&B&6&6&C&3&lʀ&x&A&2&5&1&B&9&lᴇ&x&B&9&3&D&A&F&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&4&6&A&3&E&1&lᴍ &x&5&D&8&F&D&7&lB&x&7&4&7&A&C&D&lʀ&x&8&B&6&6&C&3&lᴇ&x&A&2&5&1&B&9&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&2&E&B&7&E&B&lᴍ &x&4&6&A&3&E&1&lB&x&5&D&8&F&D&7&lʀ&x&7&4&7&A&C&D&lᴇ&x&8&B&6&6&C&3&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&0&0&E&0&F&F&lE&x&1&7&C&C&F&5&lᴍ &x&2&E&B&7&E&B&lB&x&4&6&A&3&E&1&lʀ&x&5&D&8&F&D&7&lᴇ&x&7&4&7&A&C&D&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&0&0&E&0&F&F&lᴍ &x&1&7&C&C&F&5&lB&x&2&E&B&7&E&B&lʀ&x&4&6&A&3&E&1&lᴇ&x&5&D&8&F&D&7&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&1&7&C&C&F&5&lᴍ &x&0&0&E&0&F&F&lB&x&1&7&C&C&F&5&lʀ&x&2&E&B&7&E&B&lᴇ&x&4&6&A&3&E&1&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&2&E&B&7&E&B&lᴍ &x&1&7&C&C&F&5&lB&x&0&0&E&0&F&F&lʀ&x&1&7&C&C&F&5&lᴇ&x&2&E&B&7&E&B&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&4&6&A&3&E&1&lᴍ &x&2&E&B&7&E&B&lB&x&1&7&C&C&F&5&lʀ&x&0&0&E&0&F&F&lᴇ&x&1&7&C&C&F&5&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&5&D&8&F&D&7&lᴍ &x&4&6&A&3&E&1&lB&x&2&E&B&7&E&B&lʀ&x&1&7&C&C&F&5&lᴇ&x&0&0&E&0&F&F&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&7&4&7&A&C&D&lᴍ &x&5&D&8&F&D&7&lB&x&4&6&A&3&E&1&lʀ&x&2&E&B&7&E&B&lᴇ&x&1&7&C&C&F&5&lᴠ&x&0&0&E&0&F&F&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&8&B&6&6&C&3&lᴍ &x&7&4&7&A&C&D&lB&x&5&D&8&F&D&7&lʀ&x&4&6&A&3&E&1&lᴇ&x&2&E&B&7&E&B&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&A&2&5&1&B&9&lᴍ &x&8&B&6&6&C&3&lB&x&7&4&7&A&C&D&lʀ&x&5&D&8&F&D&7&lᴇ&x&4&6&A&3&E&1&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&B&9&3&D&A&F&lᴍ &x&A&2&5&1&B&9&lB&x&8&B&6&6&C&3&lʀ&x&7&4&7&A&C&D&lᴇ&x&5&D&8&F&D&7&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&D&1&2&9&A&5&lᴍ &x&B&9&3&D&A&F&lB&x&A&2&5&1&B&9&lʀ&x&8&B&6&6&C&3&lᴇ&x&7&4&7&A&C&D&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&E&8&1&4&9&B&lᴍ &x&D&1&2&9&A&5&lB&x&B&9&3&D&A&F&lʀ&x&A&2&5&1&B&9&lᴇ&x&8&B&6&6&C&3&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&9&1&lᴍ &x&E&8&1&4&9&B&lB&x&D&1&2&9&A&5&lʀ&x&B&9&3&D&A&F&lᴇ&x&A&2&5&1&B&9&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&9&1&lB&x&E&8&1&4&9&B&lʀ&x&D&1&2&9&A&5&lᴇ&x&B&9&3&D&A&F&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&9&1&lʀ&x&E&8&1&4&9&B&lᴇ&x&D&1&2&9&A&5&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&9&1&lᴇ&x&E&8&1&4&9&B&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&9&1&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&F&F&0&0&0&0&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&4&9&lᴇ"
+    animation-speed: 2
+    location: [13.5, 102.05, -67.5, -45, 0] # X, Y, Z, yaw, pitch
+    command: " "  # comando a ser executado ao clicar
+    click-sound: "entity.villager.no" # som que toca ao clicar
+    click-pitch: 0.9
+    music: # música que toca ao redor do portal
+      - "music_disc.precipice"
+      - "music_disc.precipice"
+    music-radius: 5 # raio em blocos para ouvir a música
+    music-pitches: [1, 1]
+    music-intervals: # em ticks (20 ticks = 1 segundo)
+      - 5980
+      - 5980
+  embreve2:
+    mob: creaking
+    scale: 1.0
+    names:
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&0&0&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&0&0&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&0&0&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&0&0&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&0&0&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&0&0&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&4&9&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&F&F&0&0&9&1&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&E&8&1&4&9&B&lᴍ &x&F&F&0&0&9&1&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&D&1&2&9&A&5&lᴍ &x&E&8&1&4&9&B&lB&x&F&F&0&0&9&1&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&B&9&3&D&A&F&lᴍ &x&D&1&2&9&A&5&lB&x&E&8&1&4&9&B&lʀ&x&F&F&0&0&9&1&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&A&2&5&1&B&9&lᴍ &x&B&9&3&D&A&F&lB&x&D&1&2&9&A&5&lʀ&x&E&8&1&4&9&B&lᴇ&x&F&F&0&0&9&1&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&8&B&6&6&C&3&lᴍ &x&A&2&5&1&B&9&lB&x&B&9&3&D&A&F&lʀ&x&D&1&2&9&A&5&lᴇ&x&E&8&1&4&9&B&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&7&4&7&A&C&D&lᴍ &x&8&B&6&6&C&3&lB&x&A&2&5&1&B&9&lʀ&x&B&9&3&D&A&F&lᴇ&x&D&1&2&9&A&5&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&5&D&8&F&D&7&lᴍ &x&7&4&7&A&C&D&lB&x&8&B&6&6&C&3&lʀ&x&A&2&5&1&B&9&lᴇ&x&B&9&3&D&A&F&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&4&6&A&3&E&1&lᴍ &x&5&D&8&F&D&7&lB&x&7&4&7&A&C&D&lʀ&x&8&B&6&6&C&3&lᴇ&x&A&2&5&1&B&9&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&2&E&B&7&E&B&lᴍ &x&4&6&A&3&E&1&lB&x&5&D&8&F&D&7&lʀ&x&7&4&7&A&C&D&lᴇ&x&8&B&6&6&C&3&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&0&0&E&0&F&F&lE&x&1&7&C&C&F&5&lᴍ &x&2&E&B&7&E&B&lB&x&4&6&A&3&E&1&lʀ&x&5&D&8&F&D&7&lᴇ&x&7&4&7&A&C&D&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&0&0&E&0&F&F&lᴍ &x&1&7&C&C&F&5&lB&x&2&E&B&7&E&B&lʀ&x&4&6&A&3&E&1&lᴇ&x&5&D&8&F&D&7&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&1&7&C&C&F&5&lᴍ &x&0&0&E&0&F&F&lB&x&1&7&C&C&F&5&lʀ&x&2&E&B&7&E&B&lᴇ&x&4&6&A&3&E&1&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&2&E&B&7&E&B&lᴍ &x&1&7&C&C&F&5&lB&x&0&0&E&0&F&F&lʀ&x&1&7&C&C&F&5&lᴇ&x&2&E&B&7&E&B&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&4&6&A&3&E&1&lᴍ &x&2&E&B&7&E&B&lB&x&1&7&C&C&F&5&lʀ&x&0&0&E&0&F&F&lᴇ&x&1&7&C&C&F&5&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&5&D&8&F&D&7&lᴍ &x&4&6&A&3&E&1&lB&x&2&E&B&7&E&B&lʀ&x&1&7&C&C&F&5&lᴇ&x&0&0&E&0&F&F&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&7&4&7&A&C&D&lᴍ &x&5&D&8&F&D&7&lB&x&4&6&A&3&E&1&lʀ&x&2&E&B&7&E&B&lᴇ&x&1&7&C&C&F&5&lᴠ&x&0&0&E&0&F&F&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&8&B&6&6&C&3&lᴍ &x&7&4&7&A&C&D&lB&x&5&D&8&F&D&7&lʀ&x&4&6&A&3&E&1&lᴇ&x&2&E&B&7&E&B&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&A&2&5&1&B&9&lᴍ &x&8&B&6&6&C&3&lB&x&7&4&7&A&C&D&lʀ&x&5&D&8&F&D&7&lᴇ&x&4&6&A&3&E&1&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&B&9&3&D&A&F&lᴍ &x&A&2&5&1&B&9&lB&x&8&B&6&6&C&3&lʀ&x&7&4&7&A&C&D&lᴇ&x&5&D&8&F&D&7&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&D&1&2&9&A&5&lᴍ &x&B&9&3&D&A&F&lB&x&A&2&5&1&B&9&lʀ&x&8&B&6&6&C&3&lᴇ&x&7&4&7&A&C&D&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&E&8&1&4&9&B&lᴍ &x&D&1&2&9&A&5&lB&x&B&9&3&D&A&F&lʀ&x&A&2&5&1&B&9&lᴇ&x&8&B&6&6&C&3&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&9&1&lᴍ &x&E&8&1&4&9&B&lB&x&D&1&2&9&A&5&lʀ&x&B&9&3&D&A&F&lᴇ&x&A&2&5&1&B&9&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&9&1&lB&x&E&8&1&4&9&B&lʀ&x&D&1&2&9&A&5&lᴇ&x&B&9&3&D&A&F&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&9&1&lʀ&x&E&8&1&4&9&B&lᴇ&x&D&1&2&9&A&5&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&9&1&lᴇ&x&E&8&1&4&9&B&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&9&1&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&F&F&0&0&0&0&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&4&9&lᴇ"
+    animation-speed: 2
+    location: [13.5, 102, -47.5, -135, 0] # X, Y, Z, yaw, pitch
+    command: " "  # comando a ser executado ao clicar
+    click-sound: "entity.villager.no" # som que toca ao clicar
+    click-pitch: 0.9
+    music: # música que toca ao redor do portal
+      - "music_disc.otherside"
+      - "music_disc.otherside"
+    music-radius: 5 # raio em blocos para ouvir a música
+    music-pitches: [1, 1]
+    music-intervals: # em ticks (20 ticks = 1 segundo)
+      - 3900
+      - 3900
+  embreve3:
+    mob: piglin_brute
+    scale: 1.0
+    names:
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&0&0&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&0&0&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&0&C&lB&x&F&F&0&0&0&0&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&0&C&lʀ&x&F&F&0&0&0&0&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&1&8&lʀ&x&F&F&0&0&0&C&lᴇ&x&F&F&0&0&0&0&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&1&8&lᴇ&x&F&F&0&0&0&C&lᴠ&x&F&F&0&0&0&0&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&2&4&lᴇ&x&F&F&0&0&1&8&lᴠ&x&F&F&0&0&0&C&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&2&4&lᴠ&x&F&F&0&0&1&8&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&3&0&lᴠ&x&F&F&0&0&2&4&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&3&0&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&3&C&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&4&9&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&F&F&0&0&9&1&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&E&8&1&4&9&B&lᴍ &x&F&F&0&0&9&1&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&D&1&2&9&A&5&lᴍ &x&E&8&1&4&9&B&lB&x&F&F&0&0&9&1&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&B&9&3&D&A&F&lᴍ &x&D&1&2&9&A&5&lB&x&E&8&1&4&9&B&lʀ&x&F&F&0&0&9&1&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&A&2&5&1&B&9&lᴍ &x&B&9&3&D&A&F&lB&x&D&1&2&9&A&5&lʀ&x&E&8&1&4&9&B&lᴇ&x&F&F&0&0&9&1&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&8&B&6&6&C&3&lᴍ &x&A&2&5&1&B&9&lB&x&B&9&3&D&A&F&lʀ&x&D&1&2&9&A&5&lᴇ&x&E&8&1&4&9&B&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&7&4&7&A&C&D&lᴍ &x&8&B&6&6&C&3&lB&x&A&2&5&1&B&9&lʀ&x&B&9&3&D&A&F&lᴇ&x&D&1&2&9&A&5&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&5&D&8&F&D&7&lᴍ &x&7&4&7&A&C&D&lB&x&8&B&6&6&C&3&lʀ&x&A&2&5&1&B&9&lᴇ&x&B&9&3&D&A&F&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&4&6&A&3&E&1&lᴍ &x&5&D&8&F&D&7&lB&x&7&4&7&A&C&D&lʀ&x&8&B&6&6&C&3&lᴇ&x&A&2&5&1&B&9&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&2&E&B&7&E&B&lᴍ &x&4&6&A&3&E&1&lB&x&5&D&8&F&D&7&lʀ&x&7&4&7&A&C&D&lᴇ&x&8&B&6&6&C&3&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&0&0&E&0&F&F&lE&x&1&7&C&C&F&5&lᴍ &x&2&E&B&7&E&B&lB&x&4&6&A&3&E&1&lʀ&x&5&D&8&F&D&7&lᴇ&x&7&4&7&A&C&D&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&1&7&C&C&F&5&lE&x&0&0&E&0&F&F&lᴍ &x&1&7&C&C&F&5&lB&x&2&E&B&7&E&B&lʀ&x&4&6&A&3&E&1&lᴇ&x&5&D&8&F&D&7&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&2&E&B&7&E&B&lE&x&1&7&C&C&F&5&lᴍ &x&0&0&E&0&F&F&lB&x&1&7&C&C&F&5&lʀ&x&2&E&B&7&E&B&lᴇ&x&4&6&A&3&E&1&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&4&6&A&3&E&1&lE&x&2&E&B&7&E&B&lᴍ &x&1&7&C&C&F&5&lB&x&0&0&E&0&F&F&lʀ&x&1&7&C&C&F&5&lᴇ&x&2&E&B&7&E&B&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&5&D&8&F&D&7&lE&x&4&6&A&3&E&1&lᴍ &x&2&E&B&7&E&B&lB&x&1&7&C&C&F&5&lʀ&x&0&0&E&0&F&F&lᴇ&x&1&7&C&C&F&5&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&7&4&7&A&C&D&lE&x&5&D&8&F&D&7&lᴍ &x&4&6&A&3&E&1&lB&x&2&E&B&7&E&B&lʀ&x&1&7&C&C&F&5&lᴇ&x&0&0&E&0&F&F&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&8&B&6&6&C&3&lE&x&7&4&7&A&C&D&lᴍ &x&5&D&8&F&D&7&lB&x&4&6&A&3&E&1&lʀ&x&2&E&B&7&E&B&lᴇ&x&1&7&C&C&F&5&lᴠ&x&0&0&E&0&F&F&lᴇ"
+      - "&x&A&2&5&1&B&9&lE&x&8&B&6&6&C&3&lᴍ &x&7&4&7&A&C&D&lB&x&5&D&8&F&D&7&lʀ&x&4&6&A&3&E&1&lᴇ&x&2&E&B&7&E&B&lᴠ&x&1&7&C&C&F&5&lᴇ"
+      - "&x&B&9&3&D&A&F&lE&x&A&2&5&1&B&9&lᴍ &x&8&B&6&6&C&3&lB&x&7&4&7&A&C&D&lʀ&x&5&D&8&F&D&7&lᴇ&x&4&6&A&3&E&1&lᴠ&x&2&E&B&7&E&B&lᴇ"
+      - "&x&D&1&2&9&A&5&lE&x&B&9&3&D&A&F&lᴍ &x&A&2&5&1&B&9&lB&x&8&B&6&6&C&3&lʀ&x&7&4&7&A&C&D&lᴇ&x&5&D&8&F&D&7&lᴠ&x&4&6&A&3&E&1&lᴇ"
+      - "&x&E&8&1&4&9&B&lE&x&D&1&2&9&A&5&lᴍ &x&B&9&3&D&A&F&lB&x&A&2&5&1&B&9&lʀ&x&8&B&6&6&C&3&lᴇ&x&7&4&7&A&C&D&lᴠ&x&5&D&8&F&D&7&lᴇ"
+      - "&x&F&F&0&0&9&1&lE&x&E&8&1&4&9&B&lᴍ &x&D&1&2&9&A&5&lB&x&B&9&3&D&A&F&lʀ&x&A&2&5&1&B&9&lᴇ&x&8&B&6&6&C&3&lᴠ&x&7&4&7&A&C&D&lᴇ"
+      - "&x&F&F&0&0&8&5&lE&x&F&F&0&0&9&1&lᴍ &x&E&8&1&4&9&B&lB&x&D&1&2&9&A&5&lʀ&x&B&9&3&D&A&F&lᴇ&x&A&2&5&1&B&9&lᴠ&x&8&B&6&6&C&3&lᴇ"
+      - "&x&F&F&0&0&7&9&lE&x&F&F&0&0&8&5&lᴍ &x&F&F&0&0&9&1&lB&x&E&8&1&4&9&B&lʀ&x&D&1&2&9&A&5&lᴇ&x&B&9&3&D&A&F&lᴠ&x&A&2&5&1&B&9&lᴇ"
+      - "&x&F&F&0&0&6&D&lE&x&F&F&0&0&7&9&lᴍ &x&F&F&0&0&8&5&lB&x&F&F&0&0&9&1&lʀ&x&E&8&1&4&9&B&lᴇ&x&D&1&2&9&A&5&lᴠ&x&B&9&3&D&A&F&lᴇ"
+      - "&x&F&F&0&0&6&1&lE&x&F&F&0&0&6&D&lᴍ &x&F&F&0&0&7&9&lB&x&F&F&0&0&8&5&lʀ&x&F&F&0&0&9&1&lᴇ&x&E&8&1&4&9&B&lᴠ&x&D&1&2&9&A&5&lᴇ"
+      - "&x&F&F&0&0&5&5&lE&x&F&F&0&0&6&1&lᴍ &x&F&F&0&0&6&D&lB&x&F&F&0&0&7&9&lʀ&x&F&F&0&0&8&5&lᴇ&x&F&F&0&0&9&1&lᴠ&x&E&8&1&4&9&B&lᴇ"
+      - "&x&F&F&0&0&4&9&lE&x&F&F&0&0&5&5&lᴍ &x&F&F&0&0&6&1&lB&x&F&F&0&0&6&D&lʀ&x&F&F&0&0&7&9&lᴇ&x&F&F&0&0&8&5&lᴠ&x&F&F&0&0&9&1&lᴇ"
+      - "&x&F&F&0&0&3&C&lE&x&F&F&0&0&4&9&lᴍ &x&F&F&0&0&5&5&lB&x&F&F&0&0&6&1&lʀ&x&F&F&0&0&6&D&lᴇ&x&F&F&0&0&7&9&lᴠ&x&F&F&0&0&8&5&lᴇ"
+      - "&x&F&F&0&0&3&0&lE&x&F&F&0&0&3&C&lᴍ &x&F&F&0&0&4&9&lB&x&F&F&0&0&5&5&lʀ&x&F&F&0&0&6&1&lᴇ&x&F&F&0&0&6&D&lᴠ&x&F&F&0&0&7&9&lᴇ"
+      - "&x&F&F&0&0&2&4&lE&x&F&F&0&0&3&0&lᴍ &x&F&F&0&0&3&C&lB&x&F&F&0&0&4&9&lʀ&x&F&F&0&0&5&5&lᴇ&x&F&F&0&0&6&1&lᴠ&x&F&F&0&0&6&D&lᴇ"
+      - "&x&F&F&0&0&1&8&lE&x&F&F&0&0&2&4&lᴍ &x&F&F&0&0&3&0&lB&x&F&F&0&0&3&C&lʀ&x&F&F&0&0&4&9&lᴇ&x&F&F&0&0&5&5&lᴠ&x&F&F&0&0&6&1&lᴇ"
+      - "&x&F&F&0&0&0&C&lE&x&F&F&0&0&1&8&lᴍ &x&F&F&0&0&2&4&lB&x&F&F&0&0&3&0&lʀ&x&F&F&0&0&3&C&lᴇ&x&F&F&0&0&4&9&lᴠ&x&F&F&0&0&5&5&lᴇ"
+      - "&x&F&F&0&0&0&0&lE&x&F&F&0&0&0&C&lᴍ &x&F&F&0&0&1&8&lB&x&F&F&0&0&2&4&lʀ&x&F&F&0&0&3&0&lᴇ&x&F&F&0&0&3&C&lᴠ&x&F&F&0&0&4&9&lᴇ"
+    animation-speed: 2
+    location: [33.5, 102, -47.5, 135, 0] # X, Y, Z, yaw, pitch
+    command: " "  # comando a ser executado ao clicar
+    click-sound: "entity.villager.no" # som que toca ao clicar
+    click-pitch: 0.9
+    music: # música que toca ao redor do portal
+      - "music_disc.pigstep"
+      - "music_disc.pigstep"
+    music-radius: 5 # raio em blocos para ouvir a música
+    music-pitches: [1, 1]
+    music-intervals: # em ticks (20 ticks = 1 segundo)
+      - 2980
+      - 2980
