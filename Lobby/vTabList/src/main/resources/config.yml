@@ -1,0 +1,64 @@
+# Project: DeepCraft
+# File: config.yml
+# Author: Vitor
+# Date: 11/20/2025
+
+# License:
+#   This file is part of the DeepCraft project, licensed under
+#   the GNU General Public License v3.0 (GPLv3).
+
+#   You may redistribute and/or modify this file under the terms of the GPLv3.
+#   This file is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#   See the LICENSE file in the DeepCraft GitHub repository for more details:
+#   https://github.com/SoldadoHumano/DEEPCRAFT-1.0/blob/main/LICENSE
+
+# Intervalo de atualização da tablist em ticks (20 ticks = 1 segundo)
+update-interval: 1
+
+# Ordem dos grupos para exibição
+group-order:
+  - "owner"
+  - "ceo"
+  - "moderator"
+  - "vip"
+  - "default"
+
+# Configurações do header
+header:
+  enabled: true
+  lines:
+    line1:
+      texts:
+        - "&c&lDᴇᴇᴘ&f&lCʀᴀꜰᴛ"
+      animation-interval: 20
+    line2:
+      texts:
+        - "&7Jogadores no Lobby: &a%server_online%"
+      animation-interval: 20
+    line3:
+      texts:
+        - " "
+      animation-interval: 20
+    line4:
+      texts:
+        - "&eBem-vindo &a%player_name%"
+      animation-interval: 20
+    line5:
+      texts:
+        - ""
+      animation-interval: 10
+
+# Configurações do footer
+footer:
+  enabled: true
+  lines:
+    line1:
+      texts:
+        - " "
+      animation-interval: 20
+    line2:
+      texts:
+        - "&d&lBᴏᴍ Jᴏɢᴏ!"
+      animation-interval: 1

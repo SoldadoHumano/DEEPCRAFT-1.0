@@ -1,0 +1,24 @@
+name: vTabList
+version: 1.0.0
+main: com.vitor.vTabList
+api-version: "1.21"
+depend: [LuckPerms]
+author: Vitor
+description: Sistema de tablist personalizável com animações e placeholders
+website: seu-site.com
+
+commands:
+  vtablist:
+    description: Comando principal do vTabList
+    usage: /<command> <reload|help>
+    aliases:
+      - vtl
+    permission: vtablist.admin
+
+permissions:
+  vtablist.admin:
+    description: Permissão administrativa completa do vTabList
+    default: op
+  vtablist.reload:
+    description: Permissão para recarregar as configurações
+    default: op
