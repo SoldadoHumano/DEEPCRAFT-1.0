@@ -10,6 +10,14 @@
 
 ---
 
+> [!IMPORTANT]
+> **This repository has been archived.**
+> To improve project structure and management, all development has moved to the official **DeepCraft Organization**.
+>
+> 📂 **Access the new home here: [DeepCraft Organization](https://github.com/Deep-Craft)**
+
+---
+
 ## 📄 Project Overview
 
 This repository operates as the official **Central Plugin & Systems Hub** for the **DeepCraft Minecraft server**. It centralizes all custom-developed software, plugins, and server modules required for proprietary server functions.
